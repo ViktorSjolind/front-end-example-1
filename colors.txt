@@ -1,0 +1,5 @@
+bluegreen: 	79CBC7
+red:		E35E55
+black:		242424
+gray:		E4E3DE
+white:		F5F4F0
