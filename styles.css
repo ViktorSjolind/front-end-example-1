@@ -10,11 +10,9 @@ body {
     font: normal 16px sans-serif;
 }
 
-.container{  
-    /*max-width: 900px;*/
+#container{      
     margin: 0 auto;
-    padding: 0 0px;
-    
+    padding: 0 0px;    
     display: flex;
     flex-direction: column;
 }
@@ -25,18 +23,12 @@ header{
     padding: 20px 60px;
     
     display: flex;
-    flex-direction: row;
-    /* in what kind of way it should horizontally go */
     justify-content: space-around;
 }
 
 header nav{
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    
-    
-    
+    display: flex;      
 }
 
 header nav li{
@@ -45,6 +37,12 @@ header nav li{
     width: 140px;
     padding: 10px;
 }
+
+header nav li:hover{
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
 
 button{
     background-color: #e35e55;
@@ -59,7 +57,7 @@ button{
    
 }
 
-section{
+aside{
     border-top: 8px  solid rgba(0,0,0,0.2);
     background-color: #79cbc7;
     color: #f5f4f0;
@@ -71,12 +69,12 @@ section{
     align-items: center;
 }
 
-section img{
+aside img{
     margin-top: 20px;
     
 }
 
-section button{
+aside button{
     margin-top: 20px;
 }
 
@@ -90,7 +88,7 @@ article{
 }
 
 
-article .services-wrapper{                
+#services-wrapper{                
     padding: 50px 0;
     margin: 0 0;
     display: flex;
@@ -115,22 +113,38 @@ article li{
     color: #f5f4f0;
 }
 
-.design{
+
+#design{
     background-color: #333F4D;
 }
 
-.support{
+#support{
     background-color: #A1D29B;
+}
+
+#development{
+
+}
+
+.service-button:hover{
+    cursor: pointer;
 }
 
 
 @media all and (max-width: 900px){
     article li{
         flex-direction: column;
+        min-width: 200px;
     }
     
     header nav {
         flex-direction: column;
+    }
+
+    aside img{
+        min-width: 50px;
+        min-height: 25px;
+    
     }
 }
 
